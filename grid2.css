@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+  grid-auto-rows: 1fr;
+}
+
+.logo {
+  border: solid 1px black;
+  background: #333;
+  color: #fff;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .container {
+    background: wheat;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+  }
+
+  .logo {
+    color: salmon;
+  }
+}
