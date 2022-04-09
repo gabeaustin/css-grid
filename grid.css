@@ -22,6 +22,16 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
   row-gap: 10px;
+
+  /* aligning */
+  align-items: end;
+
+
+  /* rows and height */
+  /* use this for Truth Check  */
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* grid-template-rows: repeat(3, 1fr); */
+
 }
 
 .item {
@@ -30,4 +40,26 @@ body {
   font-size: 20px;
   padding: 20px;
   border: skyblue 1px solid;
+}
+
+.item:nth-of-type(1) {
+  background: #000;
+  /* the will stretch across */
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+.item:nth-of-type(3) {
+  background: #333;
+  /* the will stretch across */
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.item:nth-of-type(4) {
+  background: magenta;
+  /* the will stretch across */
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
